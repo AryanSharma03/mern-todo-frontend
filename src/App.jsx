@@ -44,7 +44,7 @@ function App() {
       try {
         // Axios interceptor (set up in AuthContext) will automatically add the token,
         // so no need to pass 'headers' here!
-        const response = await axios.get('http://localhost:5000/api/tasks');
+        const response = await axios.get(`${import.meta.env.VITE_APP_BACKEND_URL}/api/tasks`);
         setTasks(response.data); // Update tasks state with fetched data
         setError(null); // Clear any previous errors
         setLoadingTasks(false); // Task fetching is complete
@@ -77,7 +77,7 @@ function App() {
   const updateTask = async (taskId, updatedData) => {
     try {
       // Axios interceptor will automatically add the token
-      const response = await axios.put(`http://localhost:5000/api/tasks/${taskId}`, updatedData);
+      const response = await axios.put(`${import.meta.env.VITE_APP_BACKEND_URL}/api/tasks/${taskId}`, updatedData);
       
       // Immutably update tasks state: replace the old task with the new updated one
       setTasks((prevTasks) =>
@@ -97,7 +97,7 @@ function App() {
   const deleteTask = async (taskId) => {
     try {
       // Axios interceptor will automatically add the token
-      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`);
+      await axios.delete(`${import.meta.env.VITE_APP_BACKEND_URL}/api/tasks/${taskId}`);
       
       // Immutably update tasks state: filter out the deleted task
       setTasks((prevTasks) => prevTasks.filter((task) => task._id !== taskId));
