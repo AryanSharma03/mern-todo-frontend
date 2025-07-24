@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Production build output
+/dist
+/build
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional React production build artifacts
+build/
+.parcel-cache/
+
+# Environment variables (if you have a .env file in frontend)
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific files
+.DS_Store
+
+# npm package manager folder for modules
+/node_modules
