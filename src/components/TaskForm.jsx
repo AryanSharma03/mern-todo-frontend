@@ -32,7 +32,7 @@ const TaskForm = ({ onAddTask }) => {
       }
 
       // Make a POST request to your backend API to create a new task
-      const response = await axios.post('http://localhost:5000/api/tasks',
+      const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URL}/api/tasks`,
         { text: taskText }, // Data to send in the request body
         {
           headers: {
