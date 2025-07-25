@@ -45,10 +45,10 @@ Follow these steps to set up and run the project locally.
 
 ```bash
 # Clone the backend
-git clone [https://github.com/](https://github.com/)[YourGitHubUsername]/mern-todo-backend.git
+git clone https://github.com/AryanSharma03/mern-todo-backend
 cd mern-todo-backend
 
 # Clone the frontend (in a separate directory, NOT inside backend)
 cd .. # Go back to mern-sde-projects
-git clone [https://github.com/](https://github.com/)[YourGitHubUsername]/mern-todo-frontend.git
+git clone https://github.com/AryanSharma03/mern-todo-frontend
 cd mern-todo-frontend
