@@ -1,12 +1,54 @@
-# React + Vite
+# MERN Stack To-Do Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for managing your daily tasks, built with the MERN (MongoDB, Express.js, React.js, Node.js) stack. This application features secure user authentication and personalized task management.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Frontend (Vercel):** [https://mern-todo-frontend-gamma.vercel.app/](https://mern-todo-frontend-gamma.vercel.app/)
+* **Backend API (Render):** [https://aryan-mern-todo-backend.onrender.com/](https://aryan-mern-todo-backend.onrender.com/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **User Authentication:** Secure registration and login with JWT (JSON Web Tokens) and password hashing (bcryptjs).
+* **Personalized Tasks:** Users can create, view, update, and delete only their own tasks.
+* **CRUD Operations:** Full Create, Read, Update, Delete functionality for To-Do items.
+* **Global State Management:** Utilizes React Context API for managing authentication state across the application.
+* **Automated API Calls:** Axios Interceptors automatically attach JWTs to authenticated requests and handle token expiration.
+* **Responsive Design:** (Optional: Add if you implemented any specific responsive CSS).
+* **Error Handling:** Robust error handling for API calls and user authentication.
+
+## Technologies Used
+
+* **Frontend:**
+    * React.js (with Vite)
+    * React Router DOM
+    * Axios
+    * Context API
+* **Backend:**
+    * Node.js
+    * Express.js
+    * MongoDB (NoSQL Database)
+    * Mongoose (ODM for MongoDB)
+    * bcryptjs (for password hashing)
+    * jsonwebtoken (for JWTs)
+    * cors (for Cross-Origin Resource Sharing)
+* **Deployment:**
+    * Vercel (Frontend Hosting)
+    * Render (Backend API Hosting)
+    * GitHub (Version Control)
+
+## Setup and Local Development
+
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the Repositories
+
+```bash
+# Clone the backend
+git clone [https://github.com/](https://github.com/)[YourGitHubUsername]/mern-todo-backend.git
+cd mern-todo-backend
+
+# Clone the frontend (in a separate directory, NOT inside backend)
+cd .. # Go back to mern-sde-projects
+git clone [https://github.com/](https://github.com/)[YourGitHubUsername]/mern-todo-frontend.git
+cd mern-todo-frontend
